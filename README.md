@@ -45,3 +45,5 @@
 - Express-Handlebars 3.0.0
 - Bootstrap 4.3.1
 - Font-awesome 5.8.1
+- MongoDB
+- mongoose 6.1.7
