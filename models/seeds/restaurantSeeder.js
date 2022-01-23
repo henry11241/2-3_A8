@@ -3,6 +3,10 @@ const restaurantList = require('../../restaurant.json').results
 const db = require('../../config/mongoose')
 db.once('open', () => {
   Restaurant.create(restaurantList)
-
-  console.log('done')
+    .then(() => {
+      console.log('restaurantSeeder done!')
+      db.close()
+    })
+    .catch(error => console.log(error))
+    .finally(() => process.exit)
 })
