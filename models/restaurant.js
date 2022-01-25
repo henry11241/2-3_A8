@@ -8,7 +8,7 @@ const restaurantSchema = new Schema({
   location: { type: String, required: true },
   phone: { type: String, required: true },
   google_map: { type: String, required: false },
-  rating: { type: String, required: false },
+  rating: { type: Number, required: false },
   description: { type: String, required: true },
 })
 module.exports = mongoose.model('Restaurant', restaurantSchema)
