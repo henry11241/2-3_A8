@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
       console.log(error)
       res.render(
         'errorPage',
-        { error: err.message }
+        { error: error.message }
       )
     })
 })
@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
       console.log(error)
       res.render(
         'errorPage',
-        { error: err.message }
+        { error: error.message }
       )
     })
 })
@@ -37,7 +37,7 @@ router.get('/:id/edit', (req, res) => {
       console.log(error)
       res.render(
         'errorPage',
-        { error: err.message }
+        { error: error.message }
       )
     })
 })
@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
       console.log(error)
       res.render(
         'errorPage',
-        { error: err.message }
+        { error: error.message }
       )
     })
 })
@@ -62,7 +62,7 @@ router.delete('/:id', (req, res) => {
       console.log(error)
       res.render(
         'errorPage',
-        { error: err.message }
+        { error: error.message }
       )
     })
 })
